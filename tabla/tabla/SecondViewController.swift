@@ -11,12 +11,12 @@ import UIKit
 class SecondViewController: UIViewController{
     
     
-    
+    @IBOutlet var numero: UILabel!
     var otroNumero : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(otroNumero)
+        numero.text = "Numero recibido"
     }
     
     
