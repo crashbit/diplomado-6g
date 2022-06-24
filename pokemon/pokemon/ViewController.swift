@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var pokemones:[String] = []
     @IBOutlet var tabla: UITableView!
@@ -46,5 +46,16 @@ class ViewController: UIViewController, UITableViewDataSource{
         task.resume()
         
     }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        <#code#>
+    }
+    
+    
+    
 }
 
